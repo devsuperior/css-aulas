@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161B22;
+  --color-border: #30363D;
+  --color-text-primary: #fff;
+  --color-text-secondary: #cdcdcd;
+  --color-text-pink: #f06;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;  
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid var(--color-border);
+    background: radial-gradient(50% 50.00% at 50% 50.00%, #354864 0%, rgba(13, 17, 23, 0.00) 100%);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 120px;
+    height: auto;
+}
+
+.title-section {
+    padding: 80px 0;
+}
+
+.menu-items {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+    font-size: 12px;
+}
