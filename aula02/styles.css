@@ -1,0 +1,136 @@
+/* https://www.figma.com/file/2WoKYlIBZogIT9YQTv8WEe/website-ds */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-border: #30363d;
+  --color-text-primary: #fff;
+  --color-text-secondary: #cdcdcd;
+  --color-text-pink: #f06;
+  --color-text-orange: #ff8400;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-logo {
+  width: 120px;
+  height: auto;
+}
+
+.menu-items {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.section-text-container {
+  width: 70%;
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.section-description {
+  color: var(--color-text-secondary);
+  size: 16px;
+  font-weight: 400;
+}
+
+.title-section {
+  display: flex;
+}
+
+.title-section-title {
+  color: var(--color-text-orange);
+}
+
+.title-section-impact {
+  color: var(--color-text-orange);
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.title-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-section-right {
+  flex: 0 0 50%;
+}
+
+.title-section-right img {
+  width: 100%;
+  display: block;
+}
+
+.foundation-section {
+  padding: 54px 0;
+  background: radial-gradient(83.94% 100.00% at 100.00% 0.00%, rgba(255, 0, 102, 0.20) 29.97%, rgba(0, 0, 0, 0.00) 100%), #0D1117;
+}
+
+.foundation-section-title {
+  color: var(--color-text-pink);
+}
