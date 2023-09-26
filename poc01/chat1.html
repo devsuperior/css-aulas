@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página com Seções</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+      }
+
+      header {
+        background-color: #333;
+        text-align: center;
+        padding: 20px;
+      }
+
+      section {
+        padding: 40px;
+      }
+
+      .section-img {
+        position: relative;
+        height: 400px;
+      }
+
+      .section-img-bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.25;
+        background-image: url("student-laptop.png");
+        background-size: cover;
+        background-position: bottom;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+    </header>
+
+    <section>
+        <h2>Seção 1</h2>
+        <p>Conteúdo da primeira seção...</p>
+    </section>
+
+    <section class="section-img">
+      <div class="section-img-bg"></div>
+      <h2>Seção 2</h2>
+      <p>Conteúdo da segunda seção</p>
+    </section>
+
+    <section>
+        <h2>Seção 3</h2>
+        <p>Conteúdo da terceira seção...</p>
+      </section>
+  
+    <section>
+      <h2>Seção 4</h2>
+      <p>Conteúdo da quarta seção...</p>
+    </section>
+
+    <section>
+      <h2>Seção 5</h2>
+      <p>Conteúdo da quinta seção...</p>
+    </section>
+
+    <footer>
+      <p>Rodapé do site</p>
+    </footer>
+  </body>
+</html>
