@@ -5,11 +5,15 @@
   --color-bg-dark: #222;
   --color-bg-primary: #eee;
   --color-bg-secondary: #fff;
+  --color-bg-alive: #55cc44;
+  --color-bg-dead: #f00;
   --color-border: #3e7486;
   --color-text-main: #73bad0;
   --color-text-light: #fff;
   --color-text-dark: #666;
 }
+
+/* GLOBAL STYLES ------------------------------------------------------------ */
 
 * {
   font-family: "Inter", sans-serif;
@@ -50,14 +54,14 @@ h6 {
   margin: 0 auto;
 }
 
-.section-text-container {
-  max-width: 728px;
-}
-
 .flex-vertical-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.section-text-container {
+  max-width: 728px;
 }
 
 .section-title {
@@ -98,6 +102,14 @@ h6 {
   background-color: var(--color-bg-secondary);
 }
 
+.color-bg-alive {
+  background-color: var(--color-bg-alive);
+}
+
+.color-bg-dead {
+  background-color: var(--color-bg-dead);
+}
+
 .color-text-main {
   color: var(--color-text-main);
 }
@@ -109,6 +121,13 @@ h6 {
 .color-text-dark {
   color: var(--color-text-dark);
 }
+
+.normal-section {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+/* TITLE SECTION STYLES ------------------------------------------------------------ */
 
 .title-section {
   position: relative;
@@ -127,10 +146,7 @@ h6 {
   background-position: center;
 }
 
-.normal-section {
-  padding-top: 54px;
-  padding-bottom: 54px;
-}
+/* CARD STYLES ------------------------------------------------------------ */
 
 .cards-container {
   display: grid;
@@ -176,7 +192,6 @@ h6 {
   height: 8px;
   width: 8px;
   margin-right: 5px;
-  background: #55cc44;
   border-radius: 50%;
 }
 
@@ -186,12 +201,14 @@ h6 {
 }
 
 .card-char-attribute h4 {
+  font-family: "Inter", sans-serif;
   font-size: 14px;
 }
 
+/* FOOTER STYLES ------------------------------------------------------------ */
+
 .main-footer {
   height: 260px;
-  border-top: 1px solid var(--color-border);
   display: flex;
   align-items: center;
 }
@@ -208,6 +225,8 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
+
+/* MEDIA QUERIES ------------------------------------------------------------ */
 
 @media (min-width: 576px) {
   .full-width-container {
