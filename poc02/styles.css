@@ -2,14 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-  --color-bg-dark: #111;
-  --color-bg-light: #3564ae;
-  --color-bg-primary: #1a3468;
-  --color-bg-secondary: #154077;
-  --color-border: #0a5897;
-  --color-text-primary: #ddd;
-  --color-text-secondary: #357aae;
-  --color-text-main: #ffcb05;
+  --color-bg-dark: #222;
+  --color-bg-primary: #eee;
+  --color-bg-secondary: #fff;
+  --color-border: #3e7486;
+  --color-text-main: #73bad0;
+  --color-text-light: #fff;
+  --color-text-dark: #666;
 }
 
 * {
@@ -28,7 +27,7 @@ a:hover {
 html,
 body {
   background-color: var(--color-bg-dark);
-  color: var(--color-text-primary);
+  color: var(--color-text-main);
 }
 
 h1,
@@ -91,10 +90,6 @@ h6 {
   margin-bottom: 10px;
 }
 
-.color-bg-light {
-  background-color: var(--color-bg-light);
-}
-
 .color-bg-primary {
   background-color: var(--color-bg-primary);
 }
@@ -103,21 +98,21 @@ h6 {
   background-color: var(--color-bg-secondary);
 }
 
-.color-text-primary {
-  color: var(--color-text-primary);
-}
-
-.color-text-secondary {
-  color: var(--color-text-secondary);
-}
-
 .color-text-main {
   color: var(--color-text-main);
 }
 
+.color-text-light {
+  color: var(--color-text-light);
+}
+
+.color-text-dark {
+  color: var(--color-text-dark);
+}
+
 .title-section {
   position: relative;
-  height: 360px;
+  height: 260px;
 }
 
 .title-section-bg {
@@ -127,7 +122,7 @@ h6 {
   left: 0;
   right: 0;
   opacity: 0.1;
-  background-image: url("ball.jpg");
+  background-image: url("bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -143,35 +138,55 @@ h6 {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-.card-poke {
+.card-char {
   color: var(--color-text-main);
   background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   border-radius: 8px;
 }
 
-.card-poke:hover {
-  background-color: var(--color-bg-light);
+.card-char:hover {
+  border: 2px solid var(--color-border);
 }
 
-.card-poke-top {
-  padding: 20px;
-}
-
-.card-poke-top img {
+.card-char-top img {
   width: 100%;
   height: auto;
+  border-radius: 8px 8px 0 0;
 }
 
-.card-poke-title {
+.card-char-title {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  text-align: center;
 }
 
-.card-poke-bottom {
+.card-char-bottom {
   padding: 20px;
+}
+
+.card-char-status-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-char-status {
+  height: 8px;
+  width: 8px;
+  margin-right: 5px;
+  background: #55cc44;
+  border-radius: 50%;
+}
+
+.card-char-attribute {
+  margin-top: 10px;
+  color: var(--color-text-dark);
+}
+
+.card-char-attribute h4 {
+  font-size: 14px;
 }
 
 .main-footer {
